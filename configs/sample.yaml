@@ -1,0 +1,9 @@
+# Training configuration
+TASK_NAME:
+VERBOSE:
+USE_REF:
+PARAMS:
+  EVAL_PERIOD:
+  EPOCH:
+  SCALE:
+  LR:

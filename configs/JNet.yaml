@@ -1,0 +1,58 @@
+# Training configuration
+GPU: [0,1,2,3]
+
+VERBOSE: False
+
+MODEL_U:
+  MODE: 'SNet'
+  PARAMS:
+    img_size: 512
+    in_chans: 1
+    patch_size: 8
+    window_size: 16
+    embed_dim: 48
+    depths: [2, 2, 2, 2]
+    num_heads: [2, 2, 4, 4]
+    mlp_ratio: 4.0
+    qkv_bias: True
+    qk_scale: 2
+    drop_rate: 0.
+    ATTN_DROP_RATE: 0.
+    drop_path_rate: 0.1
+    ape: False
+    patch_norm: True
+    use_checkpoint: False
+    final_head: 'sigmoid'
+    num_classes: 1
+
+MODEL_W:
+  MODE: 'UNet_C'
+  PARAMS:
+      in_channels: 1
+      start_filts: 32
+      num_classes: 2
+      depth: 5
+      up_mode: 'transpose'
+      merge_mode: 'concat'
+# Optimization arguments.
+OPTIM:
+  BATCH: 4
+  EPOCHS: 200
+  # EPOCH_DECAY: [10]
+  LR_INIT: 1.0e-3
+  LR_MIN: 1.0e-6
+  # BETA1: 0.9
+
+MEASUREMENT:
+  prop_kernel:
+      wavelength: 532.3e-9
+      deltax: 1.12e-6
+      deltay: 1.12e-6
+      distance: 1.065e-3
+      nx: 512
+      ny: 512
+      pad_size: [512,512]
+
+  noise:
+    name: gaussian
+    sigma: 0.05

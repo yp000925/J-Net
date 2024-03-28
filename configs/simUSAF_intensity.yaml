@@ -1,0 +1,9 @@
+# Training configuration
+TASK_NAME: 'SimUSAF_intensity'
+VERBOSE: False
+USE_REF: True
+PARAMS:
+  EVAL_PERIOD: 200
+  EPOCH: 2000
+  SCALE: [10,3,0.1]
+  LR: 1.0e-3
