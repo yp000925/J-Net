@@ -1,6 +1,7 @@
 # Robust holographic reconstruction with an untrained physics-informed network
 This repository contains the code for the paper 
-<br /> Yunping Zhang and Edmund Y. Lam "Robust holographic reconstruction with an untrained physics-informed network" (_under review_)
+<br /> Yunping Zhang and Edmund Y. Lam "Joint optimization for untrained
+holographic imaging with physical perturbations" (_in progress_)
 
  In this paper, we propose J-Net, a novel approach for reliable hologram reconstruction with automatic propagation distance correction. By jointly optimizing complex-valued magnitude and propagation distance, J-Net outperforms existing methods relying on accurate imaging models. 
  It does not require extensive training on specific system configurations, making it versatile and adaptable. It achieves high-quality amplitude and phase reconstructions without prior knowledge of the precise distance.
