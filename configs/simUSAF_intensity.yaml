@@ -4,6 +4,6 @@ VERBOSE: False
 USE_REF: True
 PARAMS:
   EVAL_PERIOD: 200
-  EPOCH: 2000
-  SCALE: [10,3,0.1]
+  EPOCH: 1000
+  SCALE: [5,0.1,2]
   LR: 1.0e-3
