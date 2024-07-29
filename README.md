@@ -1,4 +1,4 @@
-# Robust holographic reconstruction with an untrained physics-informed network
+# Joint optimization for untrained holographic imaging with physical perturbations
 This repository contains the code for the paper 
 <br /> Yunping Zhang and Edmund Y. Lam "Joint optimization for untrained
 holographic imaging with physical perturbations" (_in progress_)
